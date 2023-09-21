@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  width: 390px;
+  font-family: "GothamPro";
+  background: #F0F0F0;
+}
+
+.header {
+  background-color: #F19D2F;
+  color: #2C2B31;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12.694px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 390px;
+  height: 92px;
+  background-color: #FFD1AC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  background: url(../images/slippers.png);
+  width: 390px;
+  height: 281px;
+  position: relative;
+  font-family: "GothamProBold";
+}
+.product__timer, .product__price {
+  position: absolute;
+  width: 116px;
+  height: 58px;
+  border-radius: 5px;
+  bottom: 14px;
+  color: white;
+  font-size: 10.599px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.product__timer {
+  background: #F19D2F;
+  left: 14px;
+}
+.product__timer p {
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+.product__timer span {
+  font-size: 21px;
+}
+.product__price {
+  background: #37D997;
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product__price .oldprice {
+  font-size: 18.077px;
+  text-decoration: line-through;
+  text-decoration-color: #E27500;
+}
+.product__price .newprice {
+  font-size: 22.301px;
+}
+
+.about {
+  padding: 11px 16px;
+}
+.about__grade {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.about a {
+  color: #37D997;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.about a:hover {
+  color: #1fa46e;
+}
+.about a:active {
+  color: #177951;
+}
+.about h1 {
+  color: #2C2B31;
+  font-family: "GothamProBold";
+  font-size: 19.168px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.preview img {
+  width: 358px;
+  height: 232px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.preview button {
+  width: 80px;
+  height: 66px;
+  border-radius: 10px;
+}
+.preview button:hover {
+  opacity: 0.8;
+}
+.preview button:active {
+  opacity: 0.5;
+}
+.preview .button1 {
+  background: url(../images/1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.preview .button2 {
+  background: url(../images/2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.preview .button3 {
+  background: url(../images/3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.preview .button4 {
+  background: url(../images/4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.preview__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  color: black;
+  margin-top: 20px;
+}
+.info span {
+  font-family: "GothamProBold";
+}
+.info p {
+  margin-bottom: 12px;
+}
+.info .grade {
+  font-family: "GothamPro";
+}
+
+.lists {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.lists__1 p, .lists__2 p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.lists__color, .lists__size {
+  cursor: pointer;
+  width: 170px;
+  font-family: "GothamProBold";
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 21.69px;
+  text-transform: uppercase;
+  background-color: white;
+}
+.lists__color option, .lists__size option {
+  font-family: "GothamPro";
+  text-transform: none;
+}
+
+.btn {
+  margin: 20px 0;
+  cursor: pointer;
+  width: 356px;
+  height: 50px;
+  border-radius: 15px;
+  background: #37D997;
+  color: white;
+  text-transform: uppercase;
+  font-family: "GothamProBold";
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/gothampro.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/gothampro_bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

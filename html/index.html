@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Slippers</title>
+    <!--Кодировка страницы-->
+    <meta charset="UTF-8">
+    <!--Подключаем CSS-->
+    <link rel="StyleSheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <span>
+                &#127487;&#127462;
+            </span>
+            <span>
+                SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA
+            </span>
+            <span>
+                &#127487;&#127462;
+            </span>
+        </div>
+        <div class="logo">
+            <img src="../images/logo.svg" alt="logo" />
+        </div>
+        <div class="product">
+            <div class="product__timer">
+                <p>Limited offer</p>
+                <span id="timer"></span>
+            </div>
+            <div class="product__price">
+                <p class='oldprice' id="oldPrice">
+                </p>
+                <p class='newprice' id="newPrice">
+                </p>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about__grade">
+                <p>
+                    Excellent 4.8/5
+                </p>
+                <img src="../images/trust.svg" />
+                <a>best selling</a>
+            </div>
+            <h1>Orthopedic Slippers</h1>
+            <div class="preview">
+                <img src="../images/1.jpg" />
+                <div class="preview__list">
+                    <button class="button1" data-src="../images/1.jpg"></button>
+                    <button class="button2" data-src="../images/2.jpg"></button>
+                    <button class="button3" data-src="../images/3.jpg"></button>
+                    <button class="button4" data-src="../images/4.jpg"></button>
+                </div>
+            </div>
+            <div class="info">
+                <p>
+                    <span>
+                        Fast Delivery:
+                    </span>
+                    2-4 days from SA
+                    <span>
+                        &#127487;&#127462;
+                    </span>
+                </p>
+                <p>
+                    <span>
+                        In Stock:
+                    </span>
+                    Shipping from Johannesburg
+                    <span>
+                        &#127487;&#127462;
+                    </span>
+                </p>
+                <img src="../images/stars.svg" />
+                <span class="grade">(10)</span>
+            </div>
+            <div class="lists">
+                <div class="lists__1">
+                    <p>color</p>
+                    <select class="lists__color">
+                        <option value="1">Black</option>
+                        <option value="2">Orange</option>
+                        <option value="3">Pink</option>
+                        <option value="4">Yellow</option>
+                    </select>
+                </div>
+                <div class="lists__2">
+                    <p>size</p>
+                    <select class="lists__size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/">
+                <button class="btn">Buy now</button>
+            </a>
+        </div>
+    </div>
+    <script defer src="../js/timer.js"></script>
+    <script defer src="../js/price.js"></script>
+    <script defer src="../js/preview.js"></script>
+</body>
